@@ -6,12 +6,14 @@ class StudentsController < ApplicationController
   end
 
   def create
-	@student = Student.new
-	@student.save
+	@student = Student.new(params[:student])
+	if @student.save
+		redirect_to @student
+	end
   end
 
   def show
-    @student = Student.find(params[:id])
+    @student = Student.find_by_id(params[:id])
   end
 
 end
