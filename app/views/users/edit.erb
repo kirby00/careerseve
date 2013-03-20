@@ -1,11 +1,11 @@
-<h1> Edit Student Profile </h1>
+<h1> Edit Profile </h1>
 
-<h3> <%= @student.firstname %> <%= @student.lastname %> </h3>
+<h3> <%= @user.firstname %> <%= @user.lastname %> </h3>
 
 <!-- <div> Field of interest <%= @student.field %> </div> <br> -->
 
 <div>
- 	<%= form_for(:student) do |f| %>
+ 	<%= form_for(:user) do |f| %>
 		<%= f.label :email %>
 		<%= f.text_field :email %> <br><br>
 
@@ -21,6 +21,3 @@
 	  <%= f.submit "Update Profile" %> <br><br>
 	<% end %>
 </div>
-
-<div> <a href= /students/ > Back to Students </a> </div> <br>
-

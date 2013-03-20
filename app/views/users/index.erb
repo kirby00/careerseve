@@ -1,0 +1,11 @@
+<section>
+<h1> List of Members </h1>
+</section>
+
+<h3> Total members: <%= @users.count %> </h3>
+
+<ul> <% @users.each do |s| %>
+	<li> <a href= <%= "/users/#{u.id}" %> > <%= u.firstname %> <%= u.lastname %> </a> </li> <br>
+	<% end %>
+</ul>
+

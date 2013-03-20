@@ -1,13 +1,13 @@
 Careerseve::Application.routes.draw do
 
-  get "users/new"
+  # get "users/new"
 
-match '/signup', to: 'users#new'
+# match '/signup', to: 'users#new'
 
-
+resources :users
 resources :students
-
 resources :advisors
+
 
 
   # The priority is based upon order of creation:

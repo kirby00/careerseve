@@ -1,0 +1,49 @@
+<% provide(:title, 'Sign up') %>
+
+<section>
+<h1>Sign up</h1>
+</section>
+
+<div>
+ 	<%= form_for(:user) do |f| %>
+		<%= f.label :email %>
+		<%= f.text_field :email %> <br><br>
+
+		<%= f.label :password %>
+		<%= f.text_field :password %> <br><br>
+
+		<%= f.label :password_confirmation %>
+		<%= f.text_field :password_confirmation %> <br><br>
+
+		<%= f.label :"First name" %>
+		<%= f.text_field :firstname %> <br><br>
+
+		<%= f.label :"Last name" %>
+		<%= f.text_field :lastname %> <br><br>		
+
+		<%= f.radio_button :user_type, 'advisor', :checked => true %> 
+		<%= label :user_type, 'Advisor' %>
+		<%= f.radio_button :user_type, 'student', :checked => true %> 
+		<%= label :user_type, 'Student' %> <br><br>		
+
+		<%= f.label :field %>
+		<%= f.text_field :field %> <br><br>		
+
+	  <%= f.submit "Sign me up!" %> <br><br>
+	<% end %>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <p>Find me in app/views/users/new.html.erb</p> -->
