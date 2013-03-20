@@ -22,7 +22,14 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+gem 'minitest' # the test framework
 gem 'guard'
+gem 'guard-minitest' # this helps you to create the Guardfile
+gem 'rb-fsevent', '~> 0.9.1' # required by guard
+gem 'ansi' # makes the output coloured
+gem 'turn' # makes the output nice
+gem 'terminal-notifier-guard'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

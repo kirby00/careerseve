@@ -1,5 +1,10 @@
 Careerseve::Application.routes.draw do
 
+  get "users/new"
+
+match '/signup', to: 'users#new'
+
+
 resources :students
 
 resources :advisors
