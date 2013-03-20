@@ -15,4 +15,17 @@ class AdvisorsController < ApplicationController
     @advisor = Advisor.find_by_id(params[:id])
   end
 
+  def edit
+  	@advisor = Advisor.find_by_id(params[:id])
+  end
+
+  def update
+  	@advisor = Advisor.find_by_id(params[:id])
+  	if @advisor.update_attributes(params[:advisor])
+  		flash[:success] = "Successfully updated"
+  		redirect_to @advisor
+  	else render 'edit'
+  	end
+  end
+
 end

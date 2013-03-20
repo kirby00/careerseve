@@ -16,6 +16,10 @@ class StudentsController < ApplicationController
     @student = Student.find_by_id(params[:id])
   end
 
+  def edit
+  	@student = Student.find_by_id(params[:id])
+  end
+  
 end
 
 

@@ -1,0 +1,3 @@
+##
+<%= f.check_box :field, options = {Accounting, Finance, Law}, checked_value = "1", unchecked_value = "0") public %>
+##

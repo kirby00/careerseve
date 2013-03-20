@@ -1,0 +1,72 @@
+<h1> Edit Advisor Profile </h1>
+
+<h3> <%= @advisor.firstname %> <%= @advisor.lastname %> </h3>
+
+<!-- <div> Field of interest <%= @advisor.field %> </div> <br> -->
+
+<div>
+ 	<%= form_for(@advisor) do |f| %>
+		<%= f.label :email %>
+		<%= f.text_field :email %> <br><br>
+
+		<%= f.label :firstname %>
+		<%= f.text_field :firstname %> <br><br>
+
+		<%= f.label :lastname %>
+		<%= f.text_field :lastname %> <br><br>		
+
+		<%= f.radio_button :field, 'accounting', :checked => true %> 
+		<%= label :field_Accounting, 'Accounting' %>
+		<%= f.radio_button :field, 'engineering', :checked => true %> 
+		<%= label :field_Accounting, 'Engineering' %>
+		<%= f.radio_button :field, 'finance', :checked => true %> 
+		<%= label :field_Accounting, 'Finance' %>
+		<%= f.radio_button :field, 'law', :checked => true %> 
+		<%= label :field_Accounting, 'Law' %>
+		<%= f.radio_button :field, 'medecine', :checked => true %> 
+		<%= label :field_Accounting, 'Medecine' %>
+		<%= f.radio_button :field, 'military', :checked => true %> 
+		<%= label :field_Accounting, 'Military' %>
+		<%= f.radio_button :field, 'teaching', :checked => true %> 
+		<%= label :field_Accounting, 'Teaching' %>
+
+	  <%= f.submit "Update Profile" %> <br><br>
+	<% end %>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div> <a href= /advisors/ > Back to Advisors </a> </div> <br>
+
+<div> <a href= / > Home </a> </div>
