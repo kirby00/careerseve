@@ -1,14 +1,18 @@
 class AdvisorsController < ApplicationController
 
- def index 
-  	@advisors = Advisor.all
- end
+  def index 
+   	@advisors = Advisor.all
+  end
+
+  def new
+    @advisor = Advisor.new(params[:advisor])
+  end
 
   def create
-	@advisor = Advisor.new(params[:advisor])
-	if @advisor.save
-		redirect_to @advisor
-	end
+	   @advisor = Advisor.new(params[:advisor])
+	 if @advisor.save
+	   	redirect_to @advisor
+	 end
   end
 
   def show

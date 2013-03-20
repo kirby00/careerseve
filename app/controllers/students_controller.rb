@@ -5,11 +5,15 @@ class StudentsController < ApplicationController
     @students_count = Student.count  	  
   end
 
+  def new
+    @student = Student.new(params[:student])
+  end
+
   def create
-	@student = Student.new(params[:student])
-	if @student.save
-		redirect_to @student
-	end
+	  @student = Student.new(params[:student])
+  	if @student.save
+  		redirect_to @student
+  	end
   end
 
   def show
