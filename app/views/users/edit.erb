@@ -2,10 +2,8 @@
 
 <h3> <%= @user.firstname %> <%= @user.lastname %> </h3>
 
-<!-- <div> Field of interest <%= @student.field %> </div> <br> -->
-
 <div>
- 	<%= form_for(:user) do |f| %>
+ 	<%= form_for(@user) do |f| %>
 		<%= f.label :email %>
 		<%= f.text_field :email %> <br><br>
 

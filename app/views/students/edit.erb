@@ -5,7 +5,7 @@
 <!-- <div> Field of interest <%= @student.field %> </div> <br> -->
 
 <div>
- 	<%= form_for(:student) do |f| %>
+ 	<%= form_for(@student) do |f| %>
 		<%= f.label :email %>
 		<%= f.text_field :email %> <br><br>
 

@@ -30,6 +30,8 @@ gem 'rb-fsevent', '~> 0.9.1' # required by guard
 gem 'ansi' # makes the output coloured
 gem 'turn' # makes the output nice
 gem 'terminal-notifier-guard'
+gem 'ruby-prof'
+gem 'growl_notify'
 
 # To use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.0.1'

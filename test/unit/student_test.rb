@@ -10,13 +10,8 @@ class StudentTest < ActiveSupport::TestCase
   #   assert true
   # end
 
-  def setup
-  	@student = Student.new
-  end
 
-  def test_student_can_be_created
-  	assert @student
-  end
+
 
 
 

@@ -1,8 +1,9 @@
 Careerseve::Application.routes.draw do
 
-  # get "users/new"
+  # post "users/create"
 
-# match '/signup', to: 'users#new'
+  # match '/signup', to: 'users#new'
+  # match '/show', to: 'users#new'
 
 resources :users
 resources :students
